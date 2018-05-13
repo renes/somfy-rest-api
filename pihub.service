@@ -1,0 +1,16 @@
+[Unit]
+Description=pihub
+
+[Service]
+Type=simple
+TimeoutStartSec=0
+WorkingDirectory=/home/pi/somfy
+ExecStart=/usr/bin/java -jar somfy-0.0.1-SNAPSHOT.jar
+Restart=always
+RestartSec=30
+SyslogIdentifier=pihub
+StandardOutput=syslog+console
+StandardError=syslog+console
+
+[Install]
+WantedBy=multi-user.target
