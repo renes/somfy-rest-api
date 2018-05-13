@@ -65,3 +65,8 @@ Check Log:
 `sudo journalctl --unit=pihub`
 
 `tail -f /var/log/syslog | grep pihub`
+
+# Integration in Fibaro
+The integration in fibaro is quite easy. Just create a virtual device with three buttons and use this configuration:
+
+![fibaro-config](fibaro.PNG)
